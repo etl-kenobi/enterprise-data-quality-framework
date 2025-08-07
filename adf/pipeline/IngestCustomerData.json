@@ -1,50 +1,53 @@
 {
-  "name": "IngestCustomerData",
-  "properties": {
-    "activities": [
-      {
-        "name": "CopyCustomerCSVToSQL",
-        "type": "Copy",
-        "dependsOn": [],
-        "policy": {
-          "timeout": "7.00:00:00",
-          "retry": 0,
-          "retryIntervalInSeconds": 30,
-          "secureOutput": false,
-          "secureInput": false
-        },
-        "userProperties": [],
-        "typeProperties": {
-          "source": {
-            "type": "DelimitedTextSource",
-            "storeSettings": {
-              "type": "AzureBlobFSReadSettings"
-            }
-          },
-          "sink": {
-            "type": "SqlSink",
-            "writeBatchSize": 10000,
-            "writeBatchTimeout": "00:30:00"
-          },
-          "enableStaging": false
-        },
-        "inputs": [
-          {
-            "referenceName": "DS_ADLS_Customer",
-            "type": "DatasetReference"
-          }
-        ],
-        "outputs": [
-          {
-            "referenceName": "DS_SQL_CustomerStaging",
-            "type": "DatasetReference"
-          }
-        ]
-      }
-    ],
-    "annotations": [],
-    "lastPublishTime": "2025-08-07T00:00:00Z",
-    "parameters": {}
-  },
-  "type": "Microsoft.DataFactory/factories/pipelines"
+	"name": "IngestCustomerData",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyCustomerCSVToSQL",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "SqlSink",
+						"writeBatchSize": 10000,
+						"writeBatchTimeout": "00:30:00"
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_ADLS_Customer",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_SQL_CustomerStaging",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-08-07T00:00:00Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }
