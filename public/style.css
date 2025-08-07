@@ -1,83 +1,57 @@
-
-/* Base Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
-  background-color: #f4f6f8;
+  background-color: #f4f4f4;
   color: #333;
-  padding: 2rem;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
 header {
+  background-color: #001f4d;
+  color: #fff;
+  padding: 40px 0;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-header p {
-  font-size: 1.1rem;
-  color: #555;
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+.project-card {
+  text-align: left;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  transition: transform 0.2s ease;
+h2 {
+  margin-bottom: 10px;
+  color: #001f4d;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.links a {
+.btn {
   display: inline-block;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding: 0.4rem 0.8rem;
+  margin: 10px 10px 0 0;
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: #fff;
   text-decoration: none;
-  background-color: #3498db;
-  color: white;
   border-radius: 5px;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.links a:hover {
-  background-color: #2980b9;
+.btn:hover {
+  background-color: #005fa3;
 }
 
 footer {
   text-align: center;
-  margin-top: 3rem;
-  color: #777;
+  margin-top: 40px;
+  color: #666;
 }
