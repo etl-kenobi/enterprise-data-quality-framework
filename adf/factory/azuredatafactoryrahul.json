@@ -1,0 +1,9 @@
+{
+	"name": "azuredatafactoryrahul",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4528308d-150d-4f0d-b73b-4fca466a4018",
+		"tenantId": "7406800f-4ddb-4a13-a641-79b42dde122a"
+	}
+}
