@@ -1,0 +1,10 @@
+{
+  "name": "AzureBlobStorage_LS",
+  "properties": {
+    "type": "AzureBlobFS",
+    "typeProperties": {
+      "url": "https://adlsstoragefirstlayerr.dfs.core.windows.net",
+      "accountKey": "<your_storage_account_key>"
+    }
+  }
+}

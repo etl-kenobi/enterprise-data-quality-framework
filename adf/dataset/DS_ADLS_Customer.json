@@ -1,0 +1,20 @@
+{
+  "name": "DS_ADLS_Customer",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "AzureBlobStorage_LS",
+      "type": "LinkedServiceReference"
+    },
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobFSLocation",
+        "fileName": "customers.csv",
+        "folderPath": "raw-banking-data"
+      },
+      "columnDelimiter": ",",
+      "escapeChar": "\\",
+      "firstRowAsHeader": true
+    }
+  }
+}
