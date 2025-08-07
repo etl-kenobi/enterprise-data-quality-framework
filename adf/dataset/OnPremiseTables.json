@@ -1,0 +1,13 @@
+{
+	"name": "OnPremiseTables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OnPremTables",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
