@@ -4,34 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Gurjar | Data Engineer</title>
+    <title>Enterprise Data Quality Framework</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Rahul Gurjar</h1>
-        <p>Azure Data Engineer | ETL Developer | Cloud Enthusiast</p>
+        <h1>Enterprise Data Quality Framework</h1>
+        <p>Modular & Reusable DQ Validation for Modern Data Platforms</p>
     </header>
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>I am an experienced Data Engineer with 8+ years of expertise in building cloud-based ETL pipelines, designing scalable data solutions, and modernizing analytics systems. Proficient in Azure Data Factory, Azure SQL, Synapse, and Databricks. Passionate about leveraging data to drive impactful business decisions.</p>
+            <h2>📌 Project Summary</h2>
+            <p>The Enterprise Data Quality Framework is a modular, reusable solution designed to validate and enforce data quality during ingestion workflows in modern data platforms.</p>
+            <p>This project simulates a banking data environment and showcases automated validation using PySpark in Databricks, with integration support for Azure Data Factory (ADF) and CI/CD pipelines.</p>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
+        <section id="features">
+            <h2>🔧 Key Features</h2>
             <ul>
-                <li><strong>Azure Banking ETL Pipeline</strong>: Migrated complex on-premise banking data to Azure using ADF, Synapse, Delta Lake, and Notebooks.</li>
-                <li><strong>Data Quality Framework</strong>: Built reusable data quality rules and integrated them in a CI/CD pipeline for automated ingestion and alerts.</li>
+                <li><strong>Reusable Validation Module</strong>: PySpark class <code>DQValidator</code> supporting:
+                    <ul>
+                        <li>Null Checks</li>
+                        <li>Duplicate Checks</li>
+                        <li>Range Checks</li>
+                        <li>Referential Integrity Checks</li>
+                    </ul>
+                </li>
+                <li><strong>Batch Validation Notebook</strong>: Databricks-compatible PySpark notebook to validate customer and transaction datasets end-to-end.</li>
+                <li><strong>Synthetic Sample Data</strong>: Realistic datasets generated using Faker for banking scenarios.</li>
+                <li><strong>ADF CI/CD Automation</strong>: GitHub Actions workflow (<code>deploy-adf.yml</code>) for pipeline deployment.</li>
+                <li><strong>Documentation</strong>: Includes <code>project-walkthrough.md</code> and <code>use-cases.md</code></li>
             </ul>
         </section>
+        <section id="links">
+            <h2>🔗 Repository</h2>
+            <p>Explore the full project on GitHub: 
+                <a href="https://github.com/etl-kenobi/enterprise-data-quality-framework" target="_blank">
+                    github.com/etl-kenobi/enterprise-data-quality-framework
+                </a>
+            </p>
+        </section>
         <section id="contact">
-            <h2>Contact</h2>
+            <h2>📫 Contact</h2>
             <p>Email: rahulgurjar.cloud [at] gmail.com</p>
-            <p>GitHub: <a href="https://github.com/etl-kenobi" target="_blank">github.com/etl-kenobi</a></p>
+            <p>GitHub: <a href="https://github.com/etl-kenobi" target="_blank">etl-kenobi</a></p>
         </section>
     </main>
     <footer>
-        <p>© 2025 Rahul Gurjar</p>
+        <p>© 2025 Rahul Gurjar | Data Engineer</p>
     </footer>
 </body>
 </html>
