@@ -1,13 +1,11 @@
 {
-  "name": "DS_SQL_CustomerStaging",
-  "properties": {
-    "linkedServiceName": {
-      "referenceName": "AzureSqlDB_LS",
-      "type": "LinkedServiceReference"
-    },
-    "type": "AzureSqlTable",
-    "typeProperties": {
-      "tableName": "CustomerStaging"
-    }
-  }
+	"name": "DS_SQL_CustomerStaging",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable"
+	}
 }
